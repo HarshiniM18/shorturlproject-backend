@@ -148,7 +148,7 @@ router.post("/forgot",async(req,res)=>{
             const setToken=await forgotToken(findUser[0]._id,token);
              //sending mail to reset password
             //  const link=`http://localhost:5173/reset/${findUser[0]._id}`
-            //  const link=`https://shorturlproject.netlify.app/reset/${findUser[0]._id}`
+              const link=`https://shorturlproject.netlify.app/reset/${findUser[0]._id}`
              //composing mail
              const composingMail={
                  from:"fullstackpurpose@gmail.com",
